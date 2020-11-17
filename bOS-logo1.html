@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>bOS</title>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Noto+Sans+SC:wght@100&display=swap"
+	rel="stylesheet">
+<link
+	href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Noto+Sans+SC:wght@100&family=Poiret+One&display=swap"
+	rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+
+<style type="text/css">
+body {
+	background-color: #fafafa;
+}
+
+.noto-sans {
+	font-family: 'Noto Sans SC', sans-serif;
+	font-size: 100px;
+}
+
+.comfortaa {
+	font-family: 'Comfortaa', cursive;
+	font-size: 500px;
+}
+
+.poiret {
+	font-family: 'Poiret One', cursive;
+	font-size: 100px;
+}
+
+.raleway {
+	font-family: 'Raleway', sans-serif;
+	font-size: 500px;
+}
+
+/* Tutorial on https://fossheim.io/writing/posts/css-text-gradient. */
+.gradient-text1 {
+	background-clip: text;
+	
+	/* Fallback: Set a background color. */ 
+	background-color : red;
+	
+	/* Create the gradient. */
+	background-image: linear-gradient(45deg, #78d5f3, #af4261);
+	
+	/* Set the background size and repeat properties. */
+	background-size: 100%;
+	background-repeat: repeat;
+	
+	/* Use the text as a mask for the background. */
+	/* This will show the gradient as a text color rather than element bg. */
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-background-clip: text;
+	-moz-text-fill-color: transparent;
+	/* background-color: red; */
+}
+.gradient-text2 {
+	background-clip: text;
+	
+	/* Create the gradient. */
+	/* background-image: linear-gradient(45deg, #f3ec78, #af4261); */
+	background-image: linear-gradient(45deg, #e0bc2f, #2296ca); 
+	
+	/* Set the background size and repeat properties. */
+	background-size: 100%;
+	background-repeat: repeat;
+	
+	/* Use the text as a mask for the background. */
+	/* This will show the gradient as a text color rather than element bg. */
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-background-clip: text;
+	-moz-text-fill-color: transparent;
+	
+}
+</style>
+
+</head>
+<body>
+	<!-- <h1 class="mt-5 text-center noto-sans">bOS</h1>
+	<h1 class="mt-5 text-center comfortaa gradient-text">bOS</h1>
+	<h1 class="mt-5 text-center poiret">bOS</h1>
+	<h1 class="mt-5 text-center raleway">bOS</h1> -->
+	<h1 class="mt-5 text-center ">
+		<span class="comfortaa gradient-text1">b</span><span class="mt-5 text-center raleway gradient-text2">OS</span>
+	</h1>
+
+
+
+
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
