@@ -1,239 +1,134 @@
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css">
-<style type="text/css">
-.classic-tabs .nav {
-	position: relative;
-	overflow-x: auto;
-	white-space: nowrap;
-	border-radius: .3rem .3rem 0 0;
-}
+<!doctype html>
+<html lang="en">
 
-.active {
-	background-color: rgba(255, 255, 255, 0.3);
-}
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-.tabs-orange {
-	/* background-color: #f57c00 !important; */
-	background-image: linear-gradient(#ffa95e, #d88730);
-	color: white;
-}
-/* table hover color */
-.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
-	background-color: #ffe0b2;
-	/* background-image: linear-gradient(#ffe0b2, #ffcf9e, #ffe0b2); */
-	/* text-decoration: underline; */
-}
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css"
+		integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
 
-body {
-	background-image: linear-gradient(110deg, #e8e8e8 40%, rgba(0, 0, 0, 0)
-		30%), radial-gradient(farthest-corner at 0% 0%, #bfb8b8 70%, #dedcb1 70%);
-}
-</style>
+	<title>tabs</title>
 
+	<style type="text/css">
+		.classic-tabs .nav {
+			position: relative;
+			overflow-x: auto;
+			white-space: nowrap;
+			border-radius: .3rem .3rem 0 0;
+		}
 
+		.active {
+			background-color: rgba(255, 255, 255, 0.3);
+		}
+
+		.tabs-orange {
+			/* background-color: #f57c00 !important; */
+			background-image: linear-gradient(#ffa95e, #d88730);
+			color: white;
+		}
+
+		/* table hover color */
+		.table-hover tbody tr:hover td,
+		.table-hover tbody tr:hover th {
+			background-color: #ffe0b2;
+			/* background-image: linear-gradient(#ffe0b2, #ffcf9e, #ffe0b2); */
+			/* text-decoration: underline; */
+		}
+	</style>
+</head>
 
 <body>
-<!-- Classic tabs -->
-			<div class="classic-tabs w-100 m-3">
 
-				<ul class="nav tabs-orange nav-justified text-monospace pt-2"
-					id="myClassicTabOrange" role="tablist">
-					<li class="nav-item"><a
-							class="nav-link  waves-light text-white text-center active show"
-							id="profile-tab-classic-orange" data-toggle="tab"
-							href="#profile-classic-orange" role="tab"
-							aria-controls="profile-classic-orange" aria-selected="true">
-							<i class="fas fa-user fa-2x pb-2" aria-hidden="true"></i> 1234 <br>State
-							EPC Notifications
-						</a></li>
-					<li class="nav-item"><a
-							class="nav-link waves-light text-white text-center"
-							id="follow-tab-classic-orange" data-toggle="tab"
-							href="#follow-classic-orange" role="tab"
-							aria-controls="follow-classic-orange" aria-selected="false">
-							<i class="fas fa-heart fa-2x pb-2" aria-hidden="true"></i> 534 <br>District
-							EPC Notifications
-						</a></li>
-					<li class="nav-item"><a
-							class="nav-link waves-light text-white text-center"
-							id="contact-tab-classic-orange" data-toggle="tab"
-							href="#contact-classic-orange" role="tab"
-							aria-controls="contact-classic-orange" aria-selected="false">
-							<i class="fas fa-envelope fa-2x pb-2" aria-hidden="true"></i>
-							6567 <br>Districtwise
-						</a></li>
-					<li class="nav-item"><a
-							class="nav-link waves-light text-white text-center"
-							id="awesome-tab-classic-orange" data-toggle="tab"
-							href="#awesome-classic-orange" role="tab"
-							aria-controls="awesome-classic-orange" aria-selected="false">
-							<i class="fas fa-star fa-2x pb-2" aria-hidden="true"></i> 876 <br>Out
-							Reach Activities
-						</a></li>
-				</ul>
+	<div class="container-fluid mt-5">
+		<!-- Classic tabs -->
+		<div class="classic-tabs w-100 m-3">
 
-				<div class="tab-content card p-4 border border-warning"
-					id="myClassicTabContentOrange">
-					<div class="tab-pane fade active show" id="profile-classic-orange"
-						role="tabpanel" aria-labelledby="profile-tab-classic-orange">
-						<table class="table table-borderless table-hover">
-							<tbody>
-								<tr>
-									<th scope="row"><a
-											href="http://dgft.gov.in/sites/default/files/Noti%2047_0.pdf"
-											target="_blank">
-											<img alt="" src="${AppName}/img/icons8-pdf-32.png">
-											Sample notification and details of this. you can click on any
-											place. Building on Nick Bull's answer above, you can
-											dynamically determine the number of tabs on the page using
-											Jquery.
-										</a></th>
-								</tr>
-								<tr>
-									<th scope="row"><a
-											href="http://dgft.gov.in/sites/default/files/Noti%2047_0.pdf"
-											target="_blank">
-											<img alt="" src="${AppName}/img/icons8-pdf-32.png">
-											Sample notification and details of this. you can click on any
-											place. Building on Nick Bull's answer above, you can
-											dynamically
+			<ul class="nav tabs-orange nav-justified text-monospace p-2" id="myClassicTabOrange" role="tablist">
+				<li class="nav-item"><a class="nav-link  waves-light text-white text-center active show"
+						id="profile-tab-classic-orange" data-toggle="tab" href="#profile-classic-orange" role="tab"
+						aria-controls="profile-classic-orange" aria-selected="true">
+						<i class="fas fa-user fa-2x pb-2" aria-hidden="true"></i> 1234 <br>State
+						EPC Notifications
+					</a></li>
+				<li class="nav-item"><a class="nav-link waves-light text-white text-center"
+						id="follow-tab-classic-orange" data-toggle="tab" href="#follow-classic-orange" role="tab"
+						aria-controls="follow-classic-orange" aria-selected="false">
+						<i class="fas fa-heart fa-2x pb-2" aria-hidden="true"></i> 534 <br>District
+						EPC Notifications
+					</a></li>
+				<li class="nav-item"><a class="nav-link waves-light text-white text-center"
+						id="contact-tab-classic-orange" data-toggle="tab" href="#contact-classic-orange" role="tab"
+						aria-controls="contact-classic-orange" aria-selected="false">
+						<i class="fas fa-envelope fa-2x pb-2" aria-hidden="true"></i>
+						6567 <br>Districtwise
+					</a></li>
+				<li class="nav-item"><a class="nav-link waves-light text-white text-center"
+						id="awesome-tab-classic-orange" data-toggle="tab" href="#awesome-classic-orange" role="tab"
+						aria-controls="awesome-classic-orange" aria-selected="false">
+						<i class="fas fa-star fa-2x pb-2" aria-hidden="true"></i> 876 <br>Out
+						Reach Activities
+					</a></li>
+			</ul>
 
-										</a></th>
-								</tr>
-								<tr>
-									<th scope="row"><a
-											href="http://dgft.gov.in/sites/default/files/Noti%2047_0.pdf"
-											target="_blank">
-											<img alt="" src="${AppName}/img/icons8-pdf-32.png">
-											Sample notification and details of this. you can click on any
-											place. Building on Nick Bull's answer above, you can
-											dynamically determine the number of tabs on the page using
-											Jquery.determine the number of tabs on the page using Jquery.
-										</a></th>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-					<div class="tab-pane fade" id="follow-classic-orange"
-						role="tabpanel" aria-labelledby="follow-tab-classic-orange">
-						<table class="table table-borderless table-hover">
-							<tbody>
-								<tr>
-									<th scope="row"><a
-											href="http://dgft.gov.in/sites/default/files/Noti%2047_0.pdf"
-											target="_blank">
-											<img alt="" src="${AppName}/img/icons8-pdf-32.png">
-											Sample notification and details of this. you can click on any
-											place. Building on Nick Bull's answer above, you can
-											dynamically determine the number of tabs on the page using
-											Jquery.
-										</a></th>
-								</tr>
-								<tr>
-									<th scope="row"><a
-											href="http://dgft.gov.in/sites/default/files/Noti%2047_0.pdf"
-											target="_blank">
-											<img alt="" src="${AppName}/img/icons8-pdf-32.png">
-											Sample notification and details of this. you can click on any
-											place. Building on Nick Bull's answer above, you can
-											dynamically
-
-										</a></th>
-								</tr>
-								<tr>
-									<th scope="row"><a
-											href="http://dgft.gov.in/sites/default/files/Noti%2047_0.pdf"
-											target="_blank">
-											<img alt="" src="${AppName}/img/icons8-pdf-32.png">
-											Sample notification and details of this. you can click on any
-											place. Building on Nick Bull's answer above, you can
-											dynamically determine the number of tabs on the page using
-											Jquery.determine the number of tabs on the page using Jquery.
-										</a></th>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-					<div class="tab-pane fade" id="contact-classic-orange"
-						role="tabpanel" aria-labelledby="contact-tab-classic-orange">
-						<table class="table table-borderless table-hover">
-							<tbody>
-								<tr>
-									<th scope="row"><a
-											href="http://dgft.gov.in/sites/default/files/Noti%2047_0.pdf"
-											target="_blank">
-											<img alt="" src="${AppName}/img/icons8-pdf-32.png">
-											Sample notification and details of this. you can click on any
-											place. Building on Nick Bull's answer above, you can
-											dynamically determine the number of tabs on the page using
-											Jquery.
-										</a></th>
-								</tr>
-								<tr>
-									<th scope="row"><a
-											href="http://dgft.gov.in/sites/default/files/Noti%2047_0.pdf"
-											target="_blank">
-											<img alt="" src="${AppName}/img/icons8-pdf-32.png">
-											Sample notification and details of this. you can click on any
-											place. Building on Nick Bull's answer above, you can
-											dynamically
-
-										</a></th>
-								</tr>
-								<tr>
-									<th scope="row"><a
-											href="http://dgft.gov.in/sites/default/files/Noti%2047_0.pdf"
-											target="_blank">
-											<img alt="" src="${AppName}/img/icons8-pdf-32.png">
-											Sample notification and details of this. you can click on any
-											place. Building on Nick Bull's answer above, you can
-											dynamically determine the number of tabs on the page using
-											Jquery.determine the number of tabs on the page using Jquery.
-										</a></th>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-					<div class="tab-pane fade" id="awesome-classic-orange"
-						role="tabpanel" aria-labelledby="awesome-tab-classic-orange">
-						<table class="table table-borderless table-hover">
-							<tbody>
-								<tr>
-									<th scope="row"><a
-											href="http://dgft.gov.in/sites/default/files/Noti%2047_0.pdf"
-											target="_blank">
-											<img alt="" src="${AppName}/img/icons8-pdf-32.png">
-											Sample notification and details of this. you can click on any
-											place. Building on Nick Bull's answer above, you can
-											dynamically determine the number of tabs on the page using
-											Jquery.
-										</a></th>
-								</tr>
-								<tr>
-									<th scope="row"><a
-											href="http://dgft.gov.in/sites/default/files/Noti%2047_0.pdf"
-											target="_blank">
-											<img alt="" src="${AppName}/img/icons8-pdf-32.png">
-											Sample notification and details of this. you can click on any
-											place. Building on Nick Bull's answer above, you can
-											dynamically
-
-										</a></th>
-								</tr>
-								<tr>
-									<th scope="row"><a
-											href="http://dgft.gov.in/sites/default/files/Noti%2047_0.pdf"
-											target="_blank">
-											<img alt="" src="${AppName}/img/icons8-pdf-32.png">
-											Sample notification and details of this. you can click on any
-											place. Building on Nick Bull's answer above, you can
-											dynamically determine the number of tabs on the page using
-											Jquery.determine the number of tabs on the page using Jquery.
-										</a></th>
-								</tr>
-							</tbody>
-						</table>
-					</div>
+			<div class="tab-content card p-4 border border-warning" id="myClassicTabContentOrange">
+				<div class="tab-pane fade active show" id="profile-classic-orange" role="tabpanel"
+					aria-labelledby="profile-tab-classic-orange">
+					<table class="table table-info">
+						<thead>
+						  <tr>
+							<th scope="col">#</th>
+							<th scope="col">First</th>
+							<th scope="col">Last</th>
+							<th scope="col">Handle</th>
+						  </tr>
+						</thead>
+						<tbody>
+						  <tr>
+							<th scope="row">1</th>
+							<td>Mark</td>
+							<td>Otto</td>
+							<td>@mdo</td>
+						  </tr>
+						  <tr>
+							<th scope="row">2</th>
+							<td>Jacob</td>
+							<td>Thornton</td>
+							<td>@fat</td>
+						  </tr>
+						  <tr>
+							<th scope="row">3</th>
+							<td colspan="2">Larry the Bird</td>
+							<td>@twitter</td>
+						  </tr>
+						</tbody>
+					  </table>
+				</div>
+				<div class="tab-pane fade" id="follow-classic-orange" role="tabpanel"
+					aria-labelledby="follow-tab-classic-orange">
+					
+				</div>
+				<div class="tab-pane fade" id="contact-classic-orange" role="tabpanel"
+					aria-labelledby="contact-tab-classic-orange">
+				
+				</div>
+				<div class="tab-pane fade" id="awesome-classic-orange" role="tabpanel"
+					aria-labelledby="awesome-tab-classic-orange">
+				
 				</div>
 			</div>
-			<!-- Classic tabs -->
-			</body>
+		</div>
+		<!-- Classic tabs -->
+	</div>
+
+
+	<!-- Option 1: Bootstrap Bundle with Popper.js -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js"
+		integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD"
+		crossorigin="anonymous"></script>
+
+</body>
+
+</html>
