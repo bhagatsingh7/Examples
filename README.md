@@ -1,5 +1,5 @@
 # HTML
 
-## this is the read me file
+## Examples of diffrent design elements
 
 Just putting simple html examples helps to develop projects
