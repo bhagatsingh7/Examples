@@ -1,0 +1,14 @@
+#STEP 1
+@ServletComponentScan    //ADD THIS LINE
+@SpringBootApplication
+public class MyApplication extends SpringBootServletInitializer {
+...
+}
+
+
+
+#STEP 2
+@WebFilter(urlPatterns = "/api/count")
+public class ExampleFilter implements Filter{
+ ...
+}

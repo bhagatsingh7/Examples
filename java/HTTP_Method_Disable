@@ -1,0 +1,20 @@
+//error.jsp -> To modify the response header put this line into jsp file
+response.setHeader("Allow", "Nothing");
+
+// server.xml -> disable trace by just putting this attribute
+<Connector port="8080" protocol="HTTP/1.1" connectionTimeout="20000" allowTrace="false" redirectPort="8443" />
+
+//web.xml -> put this
+<error-page>
+		<location>/WEB-INF/views/error.jsp</location>
+	</error-page>
+
+	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>restricted methods</web-resource-name>
+			<url-pattern>/*</url-pattern>
+			<http-method-omission>GET</http-method-omission>
+			<http-method-omission>POST</http-method-omission>
+		</web-resource-collection>
+		<auth-constraint />
+	</security-constraint>

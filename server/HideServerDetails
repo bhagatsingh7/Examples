@@ -1,0 +1,7 @@
+//FOR TOMCAT
+inside "lib" folder
+lib -> org -> apache -> catalina -> util -> ServerInfo.properties
+
+inside ServerInfo.properties file -
+server.info= Server Details are Hidden
+

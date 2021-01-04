@@ -1,0 +1,11 @@
+#An EL variable can be set to one of several scopes:
+
+pageScope = constrains access to the current JSP.
+
+requestScope = constrains access to the current request. The variable is not accessible to other requests, even if they originate from the same user session.
+
+sessionScope = enables access to the user session. The variable persists for the duration of that session.
+
+applicationScope = enables access to all application resources and users. The state of the variable is the same for all users of the application.
+
+Note - The default scope is pageScope, which is used when the variable declaration omits scope specification. You should specify the narrowest scope possible, in order to minimize the chance that two variables with the same name have overlapping scopes.
