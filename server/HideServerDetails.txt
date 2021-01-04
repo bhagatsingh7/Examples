@@ -1,4 +1,4 @@
-//FOR TOMCAT
+#//FOR TOMCAT
 inside "lib" folder
 lib -> org -> apache -> catalina -> util -> ServerInfo.properties
 
